@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { getallproducts } from "../slices/ProductSlice";
 import "../css/currentstok.css"; 
-import { getuser } from "../slices/UserSlice";
+
 
 function CurrentStok() {
   const dispatch = useDispatch();
