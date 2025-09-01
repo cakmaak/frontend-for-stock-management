@@ -1,0 +1,107 @@
+/* src/css/login.css */
+
+/* Sayfa ortalama ve flex */
+.login-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #f0f0f0; /* açık arka plan */
+  padding: 1rem;
+}
+
+/* Form kutusu */
+.login-container {
+  background: rgba(255, 255, 255, 0.85); /* hafif şeffaf */
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1); /* soft gölge */
+  width: 100%;
+  max-width: 400px;
+  animation: fadeIn 0.4s ease-in-out;
+}
+
+/* Başlık */
+.login-container h2 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 1.8rem;
+  font-weight: 600;
+  font-size: 1.6rem;
+}
+
+/* Form grupları */
+.login-form .form-group {
+  margin-bottom: 1.3rem;
+}
+
+.login-form label {
+  display: block;
+  margin-bottom: 0.4rem;
+  font-weight: 500;
+  color: #555;
+}
+
+.login-form input {
+  width: 100%;
+  padding: 0.7rem 1rem;
+  border-radius: 0.6rem;
+  border: 1px solid #ccc;
+  background: rgba(255, 255, 255, 0.95);
+  color: #333;
+  font-size: 1rem;
+  transition: all 0.2s ease;
+}
+
+.login-form input::placeholder {
+  color: #999;
+}
+
+.login-form input:focus {
+  outline: none;
+  border-color: #999;
+  box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.05);
+}
+
+/* Buton */
+.login-form button {
+  width: 100%;
+  padding: 0.7rem 1rem;
+  background: rgba(50, 50, 50, 0.1); /* açık şeffaf buton */
+  color: #333;
+  font-weight: 500;
+  font-size: 1rem;
+  border: 1px solid #aaa;
+  border-radius: 0.6rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.login-form button:hover {
+  background: rgba(50, 50, 50, 0.15);
+}
+
+.login-form button:disabled {
+  background: rgba(200, 200, 200, 0.3);
+  cursor: not-allowed;
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+  .login-container {
+    padding: 1.5rem;
+    border-radius: 0.8rem;
+  }
+}
+
+/* Hafif fade-in animasyonu */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

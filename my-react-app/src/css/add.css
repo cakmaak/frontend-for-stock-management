@@ -1,0 +1,81 @@
+.add-product-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f8f9fa; /* Açık renkli arka plan */
+  padding: 20px;
+}
+
+.add-product-card {
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: 30px 20px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+}
+
+.add-product-card .logo {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+  margin-bottom: 15px;
+}
+
+.add-product-card h2 {
+  margin-bottom: 5px;
+}
+
+.add-product-card p {
+  margin-bottom: 20px;
+  color: #555;
+}
+
+.add-product-card label {
+  display: block;
+  text-align: left;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  font-weight: 500;
+}
+
+.add-product-card input,
+.add-product-card select {
+  width: 100%;
+  padding: 8px 10px;
+  margin-bottom: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+.add-product-card button {
+  margin-top: 15px;
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  border: none;
+  border-radius: 6px;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.add-product-card button:hover {
+  background-color: #0056b3;
+}
+
+/* Mobil uyum */
+@media (max-width: 480px) {
+  .add-product-card {
+    padding: 20px 15px;
+  }
+
+  .add-product-card .logo {
+    width: 80px;
+    height: 80px;
+  }
+}
