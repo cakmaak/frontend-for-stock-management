@@ -35,7 +35,7 @@ function CurrentStok() {
                 <tr key={product.id}>
                   <td>{product.id}</td>
                   <td>{product.isim}</td>
-                  <td>{product.miktar}</td>
+                  <td>{product.miktar > 0 ? product.miktar : 0}</td>
                 </tr>
               ))
             ) : (
