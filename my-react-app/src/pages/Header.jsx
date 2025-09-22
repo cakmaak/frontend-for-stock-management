@@ -45,6 +45,7 @@ function Header() {
           <li><a href="/curstok">Mevcut stok</a></li>
           <li><a href="/mov">Hareketler</a></li>
           <li><a href="/dashboard">Canlı Analiz</a></li>
+          
 
           
 

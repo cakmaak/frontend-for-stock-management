@@ -33,6 +33,9 @@ function Login() {
     <div className="login-page">
       <div className="login-container">
         <h2>Giriş Yap</h2>
+        <h1 style={{fontSize:"20px"}}>email:larem@gmail.com
+          password:cakmaaq00Y
+        </h1>
         <form onSubmit={handleSubmit} className="login-form">
           <div className="form-group">
             <label>Email</label>

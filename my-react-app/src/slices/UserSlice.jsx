@@ -61,6 +61,8 @@ export const gettoken= createAsyncThunk(
     }
 }
 )
+
+
  
 
 export const getuser=createAsyncThunk(
@@ -99,6 +101,7 @@ export const login=createAsyncThunk(
     async ({email,password},thunkAPI) => {
         try {
             const response=await axios.post("https://backend-for-stockmanagement-production.up.railway.app/auth/login",
+                
                 {
                     email,
                     password

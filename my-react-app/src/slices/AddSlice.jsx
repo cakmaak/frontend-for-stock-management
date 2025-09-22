@@ -13,7 +13,7 @@ export const addslice = createAsyncThunk(
     try {
       const response = await axios.post(
         `https://backend-for-stockmanagement-production.up.railway.app/stokman/stok/savestok/${productid}`,
-        { eklenenmiktar }, // body
+        { eklenenmiktar }, 
         {
           headers: { Authorization: `Bearer ${sessionStorage.getItem("token")}` }
         }
